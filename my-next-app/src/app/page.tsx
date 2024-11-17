@@ -1,10 +1,23 @@
 import Image from "next/image";
 import ScrollImage from './scroll'
+import React, { useState } from 'react'
 
 export default function Home() {
+
+  const [showPopup, setshowPopup] = useState(false);
+  const [popupPosition, setpopupPosition] = useState({ x:0, y:0});
+  
+  const handleClick = (e: { clientX: any; clientY: any; }) => {
+    setshowPopup(true);
+    setpopupPosition({ x: e.clientX,  y: e.clientY})
+  }
+
+  const handleHidePopup = () => {
+    setshowPopup(false)
+  }
   return (
     <>
-    <div className="total-container bg-black h-[200vh]">
+    <div className="total-container bg-black h-[300vh]">
       <div className="navbar text-white flex items-center justify-between py-10 px-10">
         <div className="logo">
           <Image
@@ -46,6 +59,29 @@ export default function Home() {
 
       <div className="scroll h-[432px] bg-blue">
         <ScrollImage />
+      </div>
+
+      <div className="brands h-[561px] text-white my-28">
+        <div className="mx-8">
+          <p className="font-semibold text-[16px]">Brands that have joined joined the waitlist</p>
+          <Image
+          src={'/Brands.png'}
+          width={1248}
+          height={40}
+          alt="Brands"
+          className="py-6"
+          />
+        </div>
+
+        <div className="beamong my-14 mx-10 flex gap-10">
+          <h3 className="font-extrabold text-[42px] w-[1200px] h-[168px] leading-[56px]">Be Among the First brand to Showcase Your Content 
+          on Reeplay!</h3>
+          <div>
+            <p className="font-medium text-[16px] leading-[29px] w-[580px] mb-7">Are you a creator, producer, or brand ready to share your TV content globally audience? Join Africa’s newest streaming platform and share your TV content with a global audience. Early waitlist access includes 100 free airtime hours for eligible creators. Don’t miss your chance in 2025!</p>
+
+            <button>Join the wait list</button>
+          </div>
+        </div>
       </div>
     </div>
     </>

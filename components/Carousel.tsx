@@ -20,16 +20,16 @@ function ImageCarousel({ delay, handleFunc, stop, option, isPlay, replaceCompone
     const [emblaRef, emblaApi] = useEmblaCarousel(option, [delay > 0 ? Autoplay({ delay }) : AutoScroll({ playOnInit: isPlay })])
 
     const logSlidesInViewOnce = useCallback((emblaApi: EmblaCarouselType) => {
-        handleFunc && handleFunc();
+        if (handleFunc) handleFunc();
         emblaApi.off('pointerDown', logSlidesInViewOnce)
     }, [])
 
     useEffect(() => {
         if (!emblaApi || stop === undefined) return
         if (stop) {
-            emblaApi?.plugins().autoplay.stop
+            emblaApi?.plugins().autoplay.stop()
         } else {
-            emblaApi?.plugins().autoplay.play
+            emblaApi?.plugins().autoplay.play()
         }
 
     }, [stop])

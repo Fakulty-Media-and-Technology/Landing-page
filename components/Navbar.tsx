@@ -18,7 +18,7 @@ function Navbar() {
                 scale: 1,
             }}
             transition={{
-                duration: 1.5,
+                duration: 1,
             }}
         >
             <button className={`${manrope_600.className} flex-row gap-x-2 flex items-center`}>

@@ -11,7 +11,6 @@ import Navbar from './Navbar';
 
 function HeaderComp() {
     // Variables
-    const [isMenuPressed, setMenuPressed] = useToggle();
     const [lastScroll, setLastScroll] = useState(0);
     const [scrollClass, setScrollClass] = useState('');
 
@@ -54,7 +53,7 @@ function HeaderComp() {
                                 scale: 1,
                             }}
                             transition={{
-                                duration: 1.5,
+                                duration: 1,
                             }}
                             className="overflow-hidden"
                         >

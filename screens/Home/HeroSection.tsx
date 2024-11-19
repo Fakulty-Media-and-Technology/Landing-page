@@ -3,14 +3,14 @@
 import { AppButton, Carousel } from '@/components'
 import Wrapper from '@/components/Wrapper'
 import { manrope_500, manrope_600, montserrat_700, montserrat_800 } from '@/configs/fonts'
-import React, { useState } from 'react';
-import { motion as m } from 'framer-motion'
+import React, { useRef, useState } from 'react';
+import { motion as m, useInView } from 'framer-motion'
 import Image from 'next/image';
 import { container, fadeIn } from '@/utils/variants'
 
 
 
-const ImagesData = [
+export const ImagesData = [
     '/girls.png',
     '/night.png',
     '/content-creators.png',
@@ -29,10 +29,13 @@ const brandsImg = [
 ]
 
 function HeroSection() {
-    const [showModal, setShowModal] = useState<boolean>(false)
+    const [showModal, setShowModal] = useState<boolean>(false);
+    const ref = useRef(null);
+    const isInView2 = useInView(ref, { once: true });
+
     return (
         <main className='bg-black mt-20 md:mt-[108px] lg:mt-[130px] pb-2 xl:pb-7 overflow-hidden'>
-            <Wrapper className='overflow-x-hidden'>
+            <Wrapper className=''>
                 <div className='items-center flex flex-col mt-5'>
                     <m.h5 initial={{ y: 100, opacity: 0, }}
                         animate={{ y: 0, opacity: 1 }}
@@ -95,12 +98,9 @@ function HeroSection() {
 
             <m.div
                 className='mt-10 sm:mt-16 md:mt-24 lg:mt-32'
-                variants={container}
-                viewport={{ once: true, amount: 0.6, }}
-                initial="hidden"
-                whileInView={"show"}
+                ref={ref}
             >
-                <Wrapper className='overflow-x-hidden'>
+                {isInView2 && <Wrapper className='overflow-x-hidden'>
                     <div className='h-[35px] overflow-hidden mb-1 lg:mb-3'>
                         <m.h4
                             initial={{ y: 40, opacity: 0, }}
@@ -142,12 +142,12 @@ function HeroSection() {
                     </div>
 
 
-                    <div className='mt-16 flex flex-cols md:flex-row flex-wrap md:justify-between md:gap-x-10'>
+                    <div className='mt-10 mb-16 md:mt-12 lg:mt-16 flex flex-cols md:flex-row flex-wrap md:justify-between md:gap-x-10'>
                         <m.h2
                             initial={{ x: -80, opacity: 0, }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ duration: 0.6, delay: 1 }}
-                            className={`${montserrat_800.className} leading-[32px] md:leading-[44px] lg:leading-[56px] mt-5 w-full mx-auto md:max-w-[600px] text-2xl md:text-3xl lg:text-[42px] text-gray_white`}>Be Among the First brand to Showcase Your Content
+                            className={`${montserrat_800.className} leading-[32px] md:leading-[48px] lg:leading-[56px] mt-5 w-full mx-auto md:max-w-[600px] text-2xl md:text-3xl lg:text-[42px] text-gray_white`}>Be Among the First brand to Showcase Your Content
                             on Reeplay!</m.h2>
 
                         <m.div
@@ -163,18 +163,18 @@ function HeroSection() {
                                     initial={{ y: 40, opacity: 0, }}
                                     animate={{ y: 0, opacity: 1 }}
                                     transition={{ duration: 0.5, delay: 0.2 }}
-                                    className='w-[296px] mt-5 border border-[#434343] rounded-[24px] bg-black px-5 py-4'>
+                                    className='w-[296px] mt-5 border border-[#434343] rounded-[24px] bg-black px-5 py-3 pb-5'>
 
                                     <div onClick={() => setShowModal(!showModal)} className='ml-auto w-fit cursor-pointer'>
                                         <Image src='/close.svg' width={20} height={20} alt='close icon' />
                                     </div>
 
-                                    <h6 className={`${montserrat_700.className} text-xl text-bgRed text-center my-2.5`}>To Join the waitlist</h6>
+                                    <h6 className={`${montserrat_700.className} text-xl text-bgRed text-center my-1.5`}>To Join the waitlist</h6>
                                     <p className={`${manrope_500.className} text-sm text-white_2 text-center`}>Contact a Reeplay licensed agency <br /> in your region.</p>
                                 </m.div>}
                         </m.div>
                     </div>
-                </Wrapper>
+                </Wrapper>}
             </m.div>
 
         </main>

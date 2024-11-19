@@ -14,7 +14,10 @@ export default {
         foreground: "var(--foreground)",
         gray_white: '#f3f3f3',
         white_2: '#EBEBEB',
-        bgRed: '#EE2726'
+        bgRed: '#EE2726',
+        black_1: '#151515',
+        black_2: '#222222',
+        grey_800: '#7D7D7D'
       },
     },
   },

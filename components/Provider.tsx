@@ -1,7 +1,6 @@
 'use client'
 
 import { AnimatePresence } from 'framer-motion';
-import { ThemeProvider } from 'next-themes';
 
 type Props = {
     children: React.ReactNode

@@ -56,7 +56,7 @@ function Footer() {
                                     </Link>
                                 </m.div>
                             </div>
-                            <p className={`${manrope_500.className} mt-1.5 text-xs font-medium text-grey_800`}>Your Gateway to Africa's Best Entertainment</p>
+                            <p className={`${manrope_500.className} mt-1.5 text-xs font-medium text-grey_800`}>Your Gateway to Africa&apos;s Best Entertainment</p>
                         </div>
 
 

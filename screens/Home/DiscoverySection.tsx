@@ -135,7 +135,7 @@ export const CarouselBox = ({ x, i, playingIndexes, setPlayingIndexes }: BoxProp
                     />
                 </button>
             </div>}
-            {isPlaying && <div className='absolute top-0 w-full h-[60%] lg:pr-10 lg:h-full z-50'>
+            {isPlaying && <div className='absolute top-0 w-full h-[60%] min-h-[505px] lg:pr-10 lg:h-full z-50'>
 
                 <div className="w-full h-[60%] lg:h-full relative mx-auto">
                     <div className='w-full h-full absolute flex items-center justify-center'>

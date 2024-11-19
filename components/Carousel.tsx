@@ -1,10 +1,10 @@
 'use client'
 
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { useCallback, useEffect } from 'react'
 import useEmblaCarousel from 'embla-carousel-react';
 import AutoScroll from 'embla-carousel-auto-scroll'
 import Autoplay from 'embla-carousel-autoplay'
-import { EmblaCarouselType, EmblaOptionsType, OptionsHandlerType } from 'embla-carousel';
+import { EmblaCarouselType, EmblaOptionsType } from 'embla-carousel';
 
 
 interface Props {

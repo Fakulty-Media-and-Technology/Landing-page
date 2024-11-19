@@ -59,7 +59,7 @@ function HeroSection() {
                 </div>
             </Wrapper>
 
-            <div className='max-w-[1440px] mx-auto h-[280px] lg:h-[460px] flex flex-cols justify-center relative overflow-hidden mt-8 md:mt-16 lg:mt-20'>
+            <div className='pointer-events-none max-w-[1440px] mx-auto h-[280px] lg:h-[460px] flex flex-cols justify-center relative overflow-hidden mt-8 md:mt-16 lg:mt-20'>
                 <div style={{ alignSelf: 'center' }} className='bg-black absolute w-[130%]  h-[60px] lg:h-[220px] rounded-[310%] lg:-top-[140px] -top-[50px] z-50 pr-2 ' />
 
                 {/* CAROUSEL HERE */}
@@ -110,7 +110,7 @@ function HeroSection() {
                     </div>
 
                     <div>
-                        <div className='w-full z-0 embla'>
+                        <div className='w-full z-0 embla pointer-events-none'>
                             <Carousel
                                 option={{ loop: true, align: 'start' }}
                                 delay={0}

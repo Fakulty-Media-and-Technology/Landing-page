@@ -26,13 +26,13 @@ function ImageCarousel({ delay, handleFunc, stop, option, isPlay, replaceCompone
 
     useEffect(() => {
         if (!emblaApi || stop === undefined) return
-        if (stop) {
+        if (!stop) {
             emblaApi?.plugins().autoplay.stop()
         } else {
             emblaApi?.plugins().autoplay.play()
         }
 
-    }, [stop])
+    }, [stop, emblaApi])
 
     useEffect(() => {
         if (emblaApi) emblaApi.on('pointerDown', logSlidesInViewOnce)

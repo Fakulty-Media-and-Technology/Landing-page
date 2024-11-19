@@ -12,7 +12,7 @@ import dynamic from 'next/dynamic';
 import Size from '@/utils/useResponsiveSize';
 import Loading from "@/configs/lottie/dots.json";
 import Lottie from 'lottie-react';
-const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
+import ReactPlayer from "react-player";
 
 
 function DiscoverySection() {
@@ -110,21 +110,22 @@ export const CarouselBox = ({ x, i, playingIndexes, setPlayingIndexes }: BoxProp
 
     return (
         <m.div
+            key={i}
             variants={fadeIn("down", 0.5 * i)}
             viewport={{ once: true, amount: 0.1 }}
             initial="hidden"
             whileInView={"show"}
             className='embla__slide relative sm:pr-5 lg:pr-10'
         >
-            <Image
+            {!isPlaying && <Image
                 src={x}
                 alt='image carousel'
                 width={540}
                 height={432}
                 className='w-[540px] h-[452px] object-cover'
             />
-
-            <div className='absolute top-0 z-10 w-full h-[60%] lg:h-full flex items-center justify-center'>
+            }
+            {!isPlaying && <div className='absolute top-0 z-10 w-full h-[60%] lg:h-full flex items-center justify-center'>
                 <button onClick={() => handleVideo(i)} className='w-fit shadow-2xl'>
                     <Image
                         src='/playIcon.svg'
@@ -133,13 +134,11 @@ export const CarouselBox = ({ x, i, playingIndexes, setPlayingIndexes }: BoxProp
                         alt='Play Icon'
                     />
                 </button>
-
-
-            </div>
-            {isPlaying && <div className='absolute top-0 w-full h-[60%] lg:h-full z-50'>
+            </div>}
+            {isPlaying && <div className='absolute top-0 w-full h-[60%] lg:pr-10 lg:h-full z-50'>
 
                 <div className="w-full h-[60%] lg:h-full relative mx-auto">
-                    <div className='w-full h-full absolute'>
+                    <div className='w-full h-full absolute flex items-center justify-center'>
 
                         <ReactPlayer
                             style={{ zIndex: 10 }}

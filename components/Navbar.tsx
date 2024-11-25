@@ -21,13 +21,13 @@ function Navbar() {
                 duration: 1,
             }}
         >
-            <button className={`${manrope_600.className} flex-row gap-x-2 flex items-center`}>
+            <a href='mailto:business@reeplay.app' target='_blank' className={`${manrope_600.className} flex-row gap-x-2 flex items-center`}>
                 <span className='font-semibold text-sm md:text-base text-gray_white'>
                     Business Inquires
                 </span>
                 <Image src='/arrow-left.svg' width={15} height={11} alt='button' className='w-[15px] mt-1 h-[11px] object-contain' />
 
-            </button>
+            </a>
         </m.nav>
     )
 }

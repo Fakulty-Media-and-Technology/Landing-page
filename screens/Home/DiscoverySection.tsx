@@ -35,8 +35,8 @@ function DiscoverySection() {
                     initial="hidden"
                     whileInView={"show"}
                     className={`${manrope_500.className} mt-5 mx-auto md:max-w-[90%] lg:max-w-[80%] xl:max-w-[67%] text-sm md:text-base text-black_2 font-medium text-center leading-[25px] md:leading-[29px]`}>
-                    Get ready for an amazing lineup of movies, reality TV, podcasts, and more—all in one place!
-                    Join our 2025 waitlist for 3 months free, early access, and the chance to win ₦10 million, two years’ rent, and more exciting prizes! Each signup gets a raffle ticket!
+                    Get ready for an amazing lineup of movies, reality TV, podcasts, and more-all in one place!
+                    Join our 2025 waitlist for 3 months free early access advantage, and the chance to win up to $10,000 in cash and exciting prizes from our launch sponsors.
                 </m.p>
 
                 <m.div
@@ -44,8 +44,8 @@ function DiscoverySection() {
                     viewport={{ once: true, amount: 0.1 }}
                     initial="hidden"
                     whileInView={"show"}
-                    className='my-8  md:mb-10'>
-                    <AppButton className='mx-auto px-8 md:px-10 py-[12px] md:py-[15px] rounded-[30px] text-base text-gray_white font-semibold' title='Join the Waitlist Now' bgColor='bg-bgRed' arrowLeft />
+                    className='my-7 md:my-8'>
+                    <AppButton className='mx-auto px-10 md:px-10 py-[16px] md:py-[16px] rounded-[30px] text-base text-gray_white font-semibold' title='Join the Waitlist Now' bgColor='bg-bgRed' arrowLeft />
                 </m.div>
             </Wrapper>
 
@@ -54,9 +54,9 @@ function DiscoverySection() {
                 <div style={{ alignSelf: 'center' }} className='bg-white absolute w-[110%] h-[70px] md:h-[100px] lg:h-[220px] rounded-[810%] lg:-top-[140px] -top-[50px] md:-top-[70px] z-50 pr-2 ' />
 
                 {/* CAROUSEL HERE */}
-                <div className='w-full z-0 bg-white embla'>
+                <div className='pointer-events-none w-full z-0 bg-white embla'>
                     <Carousel
-                        option={{ loop: true, align: 'start', dragFree: true }}
+                        option={{ loop: false, align: 'start', dragFree: true }}
                         delay={4000}
                         stop={playingIndexes.length === 0}
                         handleFunc={() => setPlayingIndexes([])}
@@ -109,12 +109,8 @@ export const CarouselBox = ({ x, i, playingIndexes, setPlayingIndexes }: BoxProp
     }, [playingIndexes, i])
 
     return (
-        <m.div
+        <div
             key={i}
-            variants={fadeIn("down", 0.5 * i)}
-            viewport={{ once: true, amount: 0.1 }}
-            initial="hidden"
-            whileInView={"show"}
             className='embla__slide relative sm:pr-5 lg:pr-10'
         >
             {!isPlaying && <Image
@@ -126,7 +122,7 @@ export const CarouselBox = ({ x, i, playingIndexes, setPlayingIndexes }: BoxProp
             />
             }
             {!isPlaying && <div className='absolute top-0 z-10 w-full h-[60%] lg:h-full flex items-center justify-center'>
-                <button onClick={() => handleVideo(i)} className='w-fit shadow-2xl'>
+                <button className='w-fit shadow-2xl'>
                     <Image
                         src='/playIcon.svg'
                         width={48}
@@ -224,6 +220,6 @@ export const CarouselBox = ({ x, i, playingIndexes, setPlayingIndexes }: BoxProp
                 </div>
             </div>}
 
-        </m.div>
+        </div>
     )
 }

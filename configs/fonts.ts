@@ -12,13 +12,13 @@ export const manrope_500 = Manrope({
     weight: "500",
 });
 
-export const montserrat_800 = Manrope({
+export const montserrat_800 = Montserrat({
     subsets: ["latin"],
     style: "normal",
     weight: "800",
 });
 
-export const montserrat_700 = Manrope({
+export const montserrat_700 = Montserrat({
     subsets: ["latin"],
     style: "normal",
     weight: "700",

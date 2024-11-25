@@ -75,7 +75,7 @@ body {
 @media (max-width: 640px) {
   .embla__slide {
     flex: 0 0 60%;
-    /* padding-right: 18px; */
+    padding-right: 18px;
   }
 }
 
@@ -87,8 +87,8 @@ body {
 
 @media (max-width: 440px) {
   .embla__slide {
-    flex: 0 0 80%;
-    /* padding-right: 14px; */
+    flex: 0 0 105%;
+    padding-right: 14px;
   }
 }
 
@@ -103,7 +103,7 @@ body {
     flex: 0 0 100%;
   }
 
-  /* .embla__slide__sm {
+  .embla__slide__sm {
     flex: 0 0 30%;
-  } */
+  }
 }

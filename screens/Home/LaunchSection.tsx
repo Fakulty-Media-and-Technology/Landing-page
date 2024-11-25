@@ -14,20 +14,11 @@ function LaunchSection() {
     return (
         <section className='bg-black py-10 md:py-20 lg:pt-32 xl:pt-36'>
             <Wrapper>
-                <m.h2
-                    variants={fadeIn("right", 0.2)}
-                    viewport={{ once: true, amount: 0.1 }}
-                    initial="hidden"
-                    whileInView={"show"}
-                    className={`${montserrat_800.className} leading-[32px] md:leading-[48px] lg:leading-[56px] mt-5 w-full max-[768px]:max-w-[400px] md:max-w-[400px] lg:max-w-[600px] text-2xl md:text-3xl lg:text-[42px] text-gray_white`}>
+                <h2 className={`${montserrat_800.className} leading-[32px] md:leading-[48px] lg:leading-[56px] mt-5 w-full max-[768px]:max-w-[400px] md:max-w-[400px] lg:max-w-[600px] text-2xl md:text-3xl lg:text-[42px] text-gray_white`}>
                     Launch Your Own Live TV Channel on Reeplay
-                </m.h2>
+                </h2>
                 <div className='mt-7 md:mt-5 lg:-mt-6 xl:-mt-16 min-[800px]:mt-1 flex flex-col md:flex-row-reverse items-center'>
-                    <m.div
-                        variants={fadeIn("up", 0.4)}
-                        viewport={{ once: true, amount: 0.1 }}
-                        initial="hidden"
-                        whileInView={"show"}
+                    <div
                         className='flex-1 flex flex-col items-end min-[800px]:-mt-16 '>
                         <Image
                             src='/man-glasses.png'
@@ -36,50 +27,34 @@ function LaunchSection() {
                             alt='man with glasses'
                             className='rounded-[24px] object-cover min-[800px]:w-[410px] min-[800px]:h-[290px] lg:w-full lg:h-[320px] xl:w-[600px] xl:h-[415px] overflow-hidden'
                         />
-                    </m.div>
-                    <div className='mt-6 md:mt-0 flex-1 flex flex-col items-center md:items-start'>
-                        <m.p
-                            variants={fadeIn("up", 0.3)}
-                            viewport={{ once: true, amount: 0.1 }}
-                            initial="hidden"
-                            whileInView={"show"}
-                            className={`${manrope_500.className} max-w-[90%] md:max-w-[90%] text-sm md:text-base text-white_2 font-medium text-center leading-[25px] md:leading-[29px]`}>
-                            Churches, media pros, and investors—launch your channel on Africa’s next-gen streaming platform! Join our 2025 rollout with 6 months free for early adopters. Reserve your spot today.</m.p>
+                    </div>
+                    <div className='mt-6 md:mt-0 flex-1 flex flex-col items-start'>
+                        <p
+                            className={`${manrope_500.className} md:max-w-[90%] text-sm md:text-base text-white_2 font-medium leading-[25px] md:leading-[29px]`}>
+                            Churches, media pros, and investors—launch your channel on Africa’s next-gen streaming platform! Join our 2025 rollout with 6 months free for early adopters. Reserve your spot today.</p>
 
-                        <m.div
-                            variants={fadeIn("up", 0.5)}
-                            viewport={{ once: true, amount: 0.1 }}
-                            initial="hidden"
-                            whileInView={"show"}
+                        <div
                             className='mt-8'>
-                            <AppButton className='px-8 md:px-10 py-[12px] md:py-[15px] rounded-[30px] text-base text-gray_white font-semibold' title='Apply for Early Access' bgColor='bg-bgRed' arrowLeft />
-                        </m.div>
+                            <AppButton className='px-12 md:px-10 py-[16px] md:py-[15px] rounded-[30px] text-base text-gray_white font-semibold' title='Apply for Early Access' bgColor='bg-bgRed' arrowLeft />
+                        </div>
                     </div>
                 </div>
 
 
                 <div className='mt-20 mb-6 md:mb-0 md:mt-24 lg:mt-32 flex flex-cols md:flex-row flex-wrap md:flex-nowrap md:justify-between md:gap-x-10'>
-                    <m.h2
-                        variants={fadeIn("right", 0.5)}
-                        viewport={{ once: true, amount: 0.1 }}
-                        initial="hidden"
-                        whileInView={"show"}
+                    <h2
                         className={`${montserrat_800.className} leading-[32px] md:leading-[48px] lg:leading-[56px] mt-5 w-full mx-auto md:max-w-[600px] text-2xl md:text-3xl lg:text-[42px] text-gray_white`}>
                         Get Ready to Share Your Films on Our Platform!
-                    </m.h2>
+                    </h2>
 
-                    <m.div
-                        variants={fadeIn("right", 0.6)}
-                        viewport={{ once: true, amount: 0.1 }}
-                        initial="hidden"
-                        whileInView={"show"}
+                    <div
                         className='mt-7 w-full mx-auto md:max-w-[600px]'>
                         <p className={`${manrope_500.className} leading-[29px] text-sm md:text-base font-medium text-white_2`}>
                             Exciting news for film producers! Join the waitlist to be first in line for submissions when we open up for films, documentaries, and series. Enjoy early access and exclusive monetization benefits.
                         </p>
 
                         {!showModal ?
-                            <button onClick={() => setShowModal(!showModal)} className={`${manrope_600.className} mt-5 text-sm md:text-base underline underline-offset-8 text-gray_white`}>Join the waitlist</button>
+                            <button onClick={() => setShowModal(!showModal)} className={`${manrope_600.className} font-semibold mt-5 text-base border-b border-[#F3F3F3] pb-1 text-[#F69392]`}>Join the Waitlist</button>
                             : <m.div
                                 initial={{ y: 40, opacity: 0, }}
                                 animate={{ y: 0, opacity: 1 }}
@@ -93,7 +68,7 @@ function LaunchSection() {
                                 <h6 className={`${montserrat_700.className} text-xl text-bgRed text-center my-1.5`}>To Join the waitlist</h6>
                                 <p className={`${manrope_500.className} text-sm text-white_2 text-center`}>Contact a Reeplay licensed agency <br /> in your region.</p>
                             </m.div>}
-                    </m.div>
+                    </div>
                 </div>
             </Wrapper>
 

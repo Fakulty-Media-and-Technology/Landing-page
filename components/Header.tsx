@@ -35,10 +35,12 @@ function HeaderComp() {
         }
         setLastScroll(currentScroll);
     })
+    //fixed top-0 left-0 right-0 ${scrollClass}
+
     return (
-        <header className={`${scrollClass} bg-black fixed top-0 left-0 right-0 transition-all duration-300 ease-in-out z-[25]`}>
+        <header className={` bg-black transition-all duration-300 ease-in-out z-[25]`}>
             <Wrapper>
-                <div className="flex justify-between items-center sm:mt-3 md:mt-4 lg:mt-5 xl:mt-6 lg:pb-2 xl:pb-5">
+                <div className="flex justify-between items-center sm:mt-2 lg:pb-2 xl:pb-5">
                     <div className="overflow-hidden">
                         <m.div
                             initial={{

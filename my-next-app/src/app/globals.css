@@ -8,11 +8,21 @@ body{
 .image-scroller{
    display: flex;
    overflow: hidden;
-   border-radius: 50px;
+   animation: opacity ease 0.5s;
+   animation-timeline: view();
+   animation-range: entry 0%, cover 60%;
+}
+@keyframes opacity {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 .image{
     object-fit: cover;
-    animation: scroll-left 10s linear infinite;
+    animation: scroll-left 14s linear infinite;
     margin-right: 20px;
     transform: translateY(20px);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.055);
@@ -20,86 +30,196 @@ body{
 @keyframes scroll-left{
     0%{
         transform: translateX(0) translateY(20px);
+        /* opacity: 0; */
     }
     100%{
         transform: translateX(-100vw) translateY(20px);
+        /* opacity: 1; */
     }
 }
 
-.animate-slide-up {
-    animation: slide-up 1s ease-out;
-  }
-  
-  .animate-fade-in {
-    animation: fade-in 1s ease-out;
-  }
-  
-  .animate-slide-left {
-    animation: slide-left 1s ease-out;
-  }
-  
-  .animate-slide-right {
-    animation: slide-right 1s ease-out;
-  }
-  
-  .delay-100 {
-    animation-delay: 100ms;
-  }
-  
-  .animate-pulse {
-    animation: pulse 2s infinite;
-  }
-  
-  @keyframes slide-up {
-    0% {
-      transform: translateY(100px);
-      opacity: 0;
+
+.brand{
+    animation: slide-cont 8s linear 6s infinite;
+    transform: translateY(20px);
+}
+@keyframes slide-cont {
+    0%{
+        transform: translateX(0) translateY(20px);
     }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
+    100%{
+        transform: translateX(-50vw) translateY(20px);
     }
-  }
-  
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0px;
+    padding: 0px 28px;
+    align-items: center;
+    animation: slide-down 2s ease 0.5s ;
+}
+@keyframes slide-down{
+    from { transform: translateY(0px);
+           opacity: 0;
     }
-    100% {
-      opacity: 1;
+    to{
+        transform: translateY(10px);
+        opacity: 1;
     }
-  }
-  
-  @keyframes slide-left {
-    0% {
-      transform: translateX(100px);
-      opacity: 0;
+}
+@media screen and (max-width :500px) {
+    .logo img{
+        width: 94px;
     }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
+    .navbar ul button img{
+        width: 10px;
+        height: 7.5px;
     }
-  }
-  
-  @keyframes slide-right {
-    0% {
-      transform: translateX(-100px);
-      opacity: 0;
+    .africa h2{
+        max-width: 330px;
+        height: 111px;
+        font-size: 28px;
+        margin: 4px auto;
     }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
+    .africa p{
+        font-size: 14px;
+        padding: 0px 0px;
+    
+        
     }
-  }
-  
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
+    .cont{
+        padding: 0px 0px;
+        max-width: 380px;
+        height: 331px;
     }
-    50% {
-      transform: scale(1.05);
+    .container{
+        max-width: 380px;
+        height: 433px;
     }
-    100% {
-      transform: scale(1);
+    .check{
+        top: 38px;
+        max-width: 388px;
+        position: relative;
+        height: 60px;
+        z-index: 1;
+        right: 5px;
+        margin-left: 0;
+        border-radius: 90%
     }
+    .heck{
+        bottom: 150px;
+        max-width: 400px;
+        position: relative;
+        height: 56px;
+        right: 5px;
+        margin-left: 0;
+    }
+    .image{
+        width: 400px;
+    }
+    .branded{
+        grid-template-columns: repeat(4, 1fr);
+        display: grid;
+    }
+    .brand{
+        animation: none;
+        width: 48px;
+        height: 24px
+    }
+    .beamong{
+        display: block;
+        width: 327px;
+    }
+    .beamong h3{
+        font-size: 24px;
+        width: 327px;
+        line-height: 32px;
+    }
+    .animate-clone p{
+        width: 327px;
+    }
+    .Reeplay{
+        font-size: 24px;
+    }
+    .object{
+        display: block;
+    }
+    .easy{
+        margin: 40px 45px;
+    }
+    .covering{
+        height: 1012px;
+        width: 386px;
+        padding: 50px 0px;
+    }
+    .two{
+        width: 375px;
+        margin: 0px 0px;
+    }
+}
+
+.africa{
+    animation: slide-up 2s  0.5s;
+}
+@keyframes slide-up {
+    from{
+        opacity: 0;
+        transform: translateY(35px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(-28px);
+    }
+}
+
+.animate-fade{
+    animation: fade-in  linear 1s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+@keyframes fade-in {
+    0%{
+            transform: translateX(-100px);
+            opacity: 0;
+    }
+}
+.animate-clone{
+    animation: fade 3s linear 1s ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+@keyframes fade{
+    0%{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+}
+
+.side{
+    animation: side 3s linear 1s 1;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+@keyframes side {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+}
+.plain{
+    animation: plain 3s linear -0.5s 1;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+@keyframes plain{
+    0%{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+}
+
+.socials-container img:nth-child(2) {
+    width: 10.5px;
   }

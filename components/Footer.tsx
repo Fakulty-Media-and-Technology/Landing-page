@@ -9,10 +9,10 @@ import { motion as m, useInView } from 'framer-motion'
 
 
 const Routes = [
-    { name: 'Blog', link: 'https://blog.reeplay.app' },
-    { name: 'About Us', link: 'https://blog.reeplay.app/p/about.html?m=1' },
+    { name: 'Blog', link: 'https://reeplay.substack.com' },
+    { name: 'About Us', link: 'https://open.substack.com/pub/reeplay/p/about-reeplay?r=4tn22d&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true' },
     { name: 'Business Inquires', link: 'mailto:business@reeplay.app' },
-    { name: 'Invest', link: 'https://blog.reeplay.app/p/invest.html' },
+    { name: 'Invest', link: 'mailto:invest@reeplay.app' },
     { name: 'Help', link: 'https://help.reeplay.app' },
 ]
 
@@ -101,8 +101,8 @@ function Footer() {
 
 
                 <div className='flex justify-between items-center border-t-[0.5px] border-black_2 pt-3'>
-                    <a href='https://blog.reeplay.app/p/terms.html' target='_blank' className={`${manrope_500} text-xs font-medium text-grey_800`}>Terms and policy</a>
-                    <a href='https://blog.reeplay.app/p/privacy.html' target='_blank' className={`${manrope_500} text-xs font-medium text-grey_800`}>Privacy policy</a>
+                    <a href='https://open.substack.com/pub/reeplay/p/terms-and-conditions?r=4tn22d&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true' target='_blank' className={`${manrope_500} text-xs font-medium text-grey_800`}>Terms and policy</a>
+                    <a href='https://open.substack.com/pub/reeplay/p/privacy-policy?r=4tn22d&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true' target='_blank' className={`${manrope_500} text-xs font-medium text-grey_800`}>Privacy policy</a>
                 </div>
             </Wrapper>
         </footer>

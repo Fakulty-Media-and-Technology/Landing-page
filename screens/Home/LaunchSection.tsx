@@ -35,7 +35,9 @@ function LaunchSection() {
 
                         <div
                             className='mt-8'>
-                            <AppButton className='px-12 md:px-10 py-[16px] md:py-[15px] rounded-[30px] text-base text-gray_white font-semibold' title='Apply for Early Access' bgColor='bg-bgRed' arrowLeft />
+                            <a target='_blank' href="https://airtable.com/apprDXoDC3xnhHED3/pagtDI0fzHtomhJ1S/form">
+                                <AppButton className='px-12 md:px-10 py-[16px] md:py-[15px] rounded-[30px] text-base text-gray_white font-semibold' title='Apply for Early Access' bgColor='bg-bgRed' arrowLeft />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -53,21 +55,11 @@ function LaunchSection() {
                             Exciting news for film producers! Join the waitlist to be first in line for submissions when we open up for films, documentaries, and series. Enjoy early access and exclusive monetization benefits.
                         </p>
 
-                        {!showModal ?
-                            <button onClick={() => setShowModal(!showModal)} className={`${manrope_600.className} font-semibold mt-5 text-base border-b border-[#F3F3F3] pb-1 text-[#F69392]`}>Join the Waitlist</button>
-                            : <m.div
-                                initial={{ y: 40, opacity: 0, }}
-                                animate={{ y: 0, opacity: 1 }}
-                                transition={{ duration: 0.5, delay: 0.2 }}
-                                className='w-[296px] mt-5 border border-[#434343] rounded-[24px] bg-black px-5 py-3 pb-5'>
+                        {/* {!showModal ? */}
+                        <a target='_blank' href='https://airtable.com/apprDXoDC3xnhHED3/pagH8Xgy4JbYAPNCl/form'>
+                            <button onClick={() => setShowModal(!showModal)} className={`${manrope_600.className} font-semibold mt-5 text-base border-b border-[#F3F3F3] pb-1 text-[#F69392]`}>Submit for Waitlist</button>
+                        </a>
 
-                                <div onClick={() => setShowModal(!showModal)} className='ml-auto w-fit cursor-pointer'>
-                                    <Image src='/close.svg' width={20} height={20} alt='close icon' />
-                                </div>
-
-                                <h6 className={`${montserrat_700.className} text-xl text-bgRed text-center my-1.5`}>To Join the waitlist</h6>
-                                <p className={`${manrope_500.className} text-sm text-white_2 text-center`}>Contact a Reeplay licensed agency <br /> in your region.</p>
-                            </m.div>}
                     </div>
                 </div>
             </Wrapper>

@@ -45,12 +45,14 @@ function DiscoverySection() {
                     initial="hidden"
                     whileInView={"show"}
                     className='my-7 md:my-8'>
-                    <AppButton className='mx-auto px-10 md:px-10 py-[16px] md:py-[16px] rounded-[30px] text-base text-gray_white font-semibold' title='Join the Waitlist Now' bgColor='bg-bgRed' arrowLeft />
+                    <a target='_blank' href="https://wt.ls/reeplaywaitlist">
+                        <AppButton className='mx-auto px-10 md:px-10 py-[16px] md:py-[16px] rounded-[30px] text-base text-gray_white font-semibold' title='Join the Waitlist Now' bgColor='bg-bgRed' arrowLeft />
+                    </a>
                 </m.div>
             </Wrapper>
 
 
-            <div className='max-w-[1440px] mx-auto h-[280px] -mb-1 lg:h-[460px] flex flex-cols justify-center relative overflow-hidden'>
+            <div className='mx-auto h-[280px] -mb-1 lg:h-[460px] flex flex-cols justify-center relative overflow-hidden'>
                 <div style={{ alignSelf: 'center' }} className='bg-white absolute w-[110%] h-[70px] md:h-[100px] lg:h-[220px] rounded-[810%] lg:-top-[140px] -top-[50px] md:-top-[70px] z-50 pr-2 ' />
 
                 {/* CAROUSEL HERE */}
@@ -62,8 +64,9 @@ function DiscoverySection() {
                         handleFunc={() => setPlayingIndexes([])}
                         replaceComponent={<>
                             {ImagesData.map((x, i) => {
+                                const isLastItem = i === ImagesData.length - 1
                                 return (
-                                    <CarouselBox key={i} x={x} i={i} playingIndexes={playingIndexes} setPlayingIndexes={setPlayingIndexes} />
+                                    <CarouselBox isLastItem={isLastItem} key={i} x={x} i={i} playingIndexes={playingIndexes} setPlayingIndexes={setPlayingIndexes} />
                                 )
                             })}
                         </>}
@@ -85,9 +88,10 @@ interface BoxProps {
     i: number;
     playingIndexes: number[];
     setPlayingIndexes: React.Dispatch<React.SetStateAction<number[]>>;
+    isLastItem: boolean
 }
 
-export const CarouselBox = ({ x, i, playingIndexes, setPlayingIndexes }: BoxProps) => {
+export const CarouselBox = ({ isLastItem, x, i, playingIndexes, setPlayingIndexes }: BoxProps) => {
     // const [isPlaying, setIsPlaying] = useState<boolean>(false);
     const isPlaying = playingIndexes.includes(i);
     const [mute, setMute] = useState<boolean>(true);
@@ -111,6 +115,7 @@ export const CarouselBox = ({ x, i, playingIndexes, setPlayingIndexes }: BoxProp
     return (
         <div
             key={i}
+            style={isLastItem ? { paddingRight: 0 } : {}}
             className='embla__slide relative sm:pr-5 lg:pr-10'
         >
             {!isPlaying && <Image
@@ -118,7 +123,7 @@ export const CarouselBox = ({ x, i, playingIndexes, setPlayingIndexes }: BoxProp
                 alt='image carousel'
                 width={540}
                 height={432}
-                className='w-[540px] h-[452px] object-cover'
+                className='w-[540px] xl:w-[100%] h-[452px] object-cover'
             />
             }
             {!isPlaying && <div className='absolute top-0 z-10 w-full h-[60%] lg:h-full flex items-center justify-center'>

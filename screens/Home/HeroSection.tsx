@@ -54,12 +54,34 @@ function HeroSection() {
                     <m.div initial={{ y: 100, opacity: 0, }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.5, delay: 1.1 }} className='mt-8 md:mt-10 lg:mt-8'>
-                        <AppButton className='px-12 py-[15px] lg:py-5 lg:rounded-[40px] rounded-[30px] text-base text-gray_white font-semibold' title='Get Started' bgColor='bg-bgRed' arrowLeft />
+                        <>
+                            {!showModal ?
+                                <AppButton
+                                    className='px-12 py-[15px] lg:py-5 lg:rounded-[40px] rounded-[30px] text-base text-gray_white font-semibold'
+                                    title='Get Started'
+                                    bgColor='bg-bgRed'
+                                    arrowLeft
+                                    onClick={() => setShowModal(!showModal)}
+                                />
+                                : <m.div
+                                    initial={{ y: 40, opacity: 0, }}
+                                    animate={{ y: 0, opacity: 1 }}
+                                    transition={{ duration: 0.5, delay: 0.2 }}
+                                    className='w-[296px] mt-5 border border-[#434343] rounded-[24px] bg-black px-5 py-3 pb-5'>
+
+                                    <div onClick={() => setShowModal(!showModal)} className='ml-auto w-fit cursor-pointer'>
+                                        <Image src='/close.svg' width={20} height={20} alt='close icon' />
+                                    </div>
+
+                                    <h6 className={`${montserrat_700.className} text-xl text-bgRed text-center my-1.5`}>Join the waitlist</h6>
+                                    <p className={`${manrope_500.className} text-sm text-white_2 text-center`}>Scroll down to find waitlist category <br /> that fits your interest.</p>
+                                </m.div>}
+                        </>
                     </m.div>
                 </div>
             </Wrapper>
 
-            <div className='pointer-events-none max-w-[1440px] mx-auto h-[280px] lg:h-[460px] flex flex-cols justify-center relative overflow-hidden mt-8 lg:mt-0'>
+            <div className='pointer-events-none mx-auto h-[280px] lg:h-[460px] flex flex-cols justify-center relative overflow-hidden mt-8 lg:mt-0'>
                 <div style={{ alignSelf: 'center' }} className='bg-black absolute w-[130%]  h-[60px] lg:h-[220px] rounded-[310%] lg:-top-[140px] -top-[50px] z-50 pr-2 ' />
 
                 {/* CAROUSEL HERE */}
@@ -69,8 +91,10 @@ function HeroSection() {
                         delay={4000}
                         replaceComponent={<>
                             {ImagesData.map((x, i) => {
+                                const isLastItem = i === ImagesData.length - 1;
                                 return (
                                     <div key={i}
+                                        style={isLastItem ? { paddingRight: 0 } : {}}
                                         className='embla__slide sm:pr-5 lg:pr-10'
                                     >
                                         <Image
@@ -78,7 +102,7 @@ function HeroSection() {
                                             alt='image carousel'
                                             width={540}
                                             height={432}
-                                            className='w-[540px] h-[452px] object-cover'
+                                            className='w-[540px] xl:w-[100%] h-[452px] object-cover'
                                         />
 
                                     </div>
@@ -107,25 +131,26 @@ function HeroSection() {
                                 option={{ loop: true, align: 'start' }}
                                 delay={0}
                                 isPlay
-                                replaceComponent={
-                                    <div className='flex flex-wrap max-[758px]:justify-between gap-y-6 md:gap-x-8'>
-                                        {brandsImg.map((x, i) => {
-                                            return (
-                                                <div key={i}
-                                                    className='pr-5 lg:pr-10'
-                                                >
-                                                    <Image
-                                                        src={x}
-                                                        alt='image carousel'
-                                                        width={86}
-                                                        height={40}
-                                                        className=' w-[50px] h-[24px] md:w-[86px] md:h-[40px] object-contain'
-                                                    />
-
-                                                </div>
-                                            )
-                                        })}
-                                    </div>}
+                                replaceComponent={<>
+                                    {brandsImg.map((x, i) => {
+                                        return (
+                                            <m.div key={i}
+                                                initial={{ x: -80, opacity: 0, }}
+                                                animate={{ x: 0, opacity: 1 }}
+                                                transition={{ duration: 0.5, delay: 0.2 * i }}
+                                                className='embla__slide__sm pl-5 lg:pl-10'
+                                            >
+                                                <Image
+                                                    src={x}
+                                                    alt='image carousel'
+                                                    width={86}
+                                                    height={40}
+                                                    className='w-[86px] h-[40px] object-contain'
+                                                />
+                                            </m.div>
+                                        )
+                                    })}
+                                </>}
                             />
                         </div>
 
@@ -139,23 +164,15 @@ function HeroSection() {
 
                         <div
                             className='mt-5 w-full sm:mx-auto max-w-[99%] md:max-w-[600px]'>
-                            <p className={`${manrope_500.className} leading-[25px] lg:leading-[29px] text-sm md:text-base font-medium text-white_2`}>Are you a creator, producer, or brand ready to share your TV content globally audience? Join Africa’s newest streaming platform and share your TV content with a global audience. Early waitlist access includes 100 free airtime hours for eligible creators. Don’t miss your chance in 2025!</p>
+                            <p className={`${manrope_500.className} leading-[25px] lg:leading-[29px] text-sm md:text-base font-medium text-white_2`}>
+                                Are you a creator, producer, or brand ready to share your TV
+                                content to global audience? Join  Reeplay, the newest black
+                                streaming platform and share your TV content with a global audience.
+                                Early waitlist access includes 100 free airtime hours for eligible creators. Don’t miss your chance in 2025!</p>
 
-                            {!showModal ?
-                                <button onClick={() => setShowModal(!showModal)} className={`${manrope_600.className} font-semibold mt-5 text-base border-b border-[#F3F3F3] pb-1 text-[#F69392]`}>Join the Waitlist</button>
-                                : <m.div
-                                    initial={{ y: 40, opacity: 0, }}
-                                    animate={{ y: 0, opacity: 1 }}
-                                    transition={{ duration: 0.5, delay: 0.2 }}
-                                    className='w-[296px] mt-5 border border-[#434343] rounded-[24px] bg-black px-5 py-3 pb-5'>
 
-                                    <div onClick={() => setShowModal(!showModal)} className='ml-auto w-fit cursor-pointer'>
-                                        <Image src='/close.svg' width={20} height={20} alt='close icon' />
-                                    </div>
-
-                                    <h6 className={`${montserrat_700.className} text-xl text-bgRed text-center my-1.5`}>To Join the waitlist</h6>
-                                    <p className={`${manrope_500.className} text-sm text-white_2 text-center`}>Contact a Reeplay licensed agency <br /> in your region.</p>
-                                </m.div>}
+                            <a target='_blank' href="https://airtable.com/apprDXoDC3xnhHED3/pagH8Xgy4JbYAPNCl/form">                                <button onClick={() => setShowModal(!showModal)} className={`${manrope_600.className} font-semibold mt-5 text-base border-b border-[#F3F3F3] pb-1 text-[#F69392]`}>Join the Waitlist</button>
+                            </a>
                         </div>
                     </div>
                 </Wrapper>

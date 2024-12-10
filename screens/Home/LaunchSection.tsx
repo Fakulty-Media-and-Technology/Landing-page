@@ -31,7 +31,7 @@ function LaunchSection() {
                     <div className='mt-6 md:mt-0 flex-1 flex flex-col items-start'>
                         <p
                             className={`${manrope_500.className} md:max-w-[90%] text-sm md:text-base text-white_2 font-medium leading-[25px] md:leading-[29px]`}>
-                            Churches, media pros, and investors—launch your channel on Africa’s next-gen streaming platform! Join our 2025 rollout with 6 months free for early adopters. Reserve your spot today.</p>
+                            Churches, other Religious body or faith, media pros, and investors —launch your channel on Reeplay, the next-gen streaming platform! Join our 2025 rollout with 3 months free for early adopters. Reserve your spot today.</p>
 
                         <div
                             className='mt-8'>
@@ -52,12 +52,12 @@ function LaunchSection() {
                     <div
                         className='mt-7 w-full mx-auto md:max-w-[600px]'>
                         <p className={`${manrope_500.className} leading-[29px] text-sm md:text-base font-medium text-white_2`}>
-                            Exciting news for film producers! Join the waitlist to be first in line for submissions when we open up for films, documentaries, and series. Enjoy early access and exclusive monetization benefits.
+                            Exciting news for film producers! Join the waitlist to be first in line for submissions when we open up for films, documentaries, and series.<br /> Enjoy early access and exclusive monetization benefits.
                         </p>
 
                         {/* {!showModal ? */}
                         <a target='_blank' href='https://airtable.com/apprDXoDC3xnhHED3/pagH8Xgy4JbYAPNCl/form'>
-                            <button onClick={() => setShowModal(!showModal)} className={`${manrope_600.className} font-semibold mt-5 text-base border-b border-[#F3F3F3] pb-1 text-[#F69392]`}>Submit for Waitlist</button>
+                            <button onClick={() => setShowModal(!showModal)} className={`${manrope_600.className} font-semibold mt-5 text-base border-b border-[#F3F3F3] pb-1 text-[#F69392]`}>Submit to Waitlist</button>
                         </a>
 
                     </div>

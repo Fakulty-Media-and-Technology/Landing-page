@@ -27,7 +27,7 @@ function DiscoverySection() {
                     initial="hidden"
                     whileInView={"show"}
                     className={`${montserrat_800.className} mx-auto leading-[32px] md:leading-[48px] lg:leading-[56px] mt-4 w-full max-[768px]:max-w-[400px] md:max-w-[400px] lg:max-w-[600px] text-2xl md:text-3xl lg:text-[42px] text-black_1 text-center`}>
-                    Discover the Best of African Entertainment
+                    You're a Viewer? <br /> Join Reeplay here.
                 </m.h2>
                 <m.p
                     variants={fadeIn("up", 0.3)}
@@ -35,8 +35,8 @@ function DiscoverySection() {
                     initial="hidden"
                     whileInView={"show"}
                     className={`${manrope_500.className} mt-5 mx-auto md:max-w-[90%] lg:max-w-[80%] xl:max-w-[67%] text-sm md:text-base text-black_2 font-medium text-center leading-[25px] md:leading-[29px]`}>
-                    Get ready for an amazing lineup of movies, reality TV, podcasts, and more-all in one place!
-                    Join our 2025 waitlist for 3 months free early access advantage, and the chance to win up to $10,000 in cash and exciting prizes from our launch sponsors.
+                    Get ready for an amazing lineup of movies, reality TV, podcasts, and more-all in one place!<br />
+                    Join our 2025 waitlist for 1 months free early access advantage, and the chance to <br /> win up to $5,000 and exciting prizes from our launch sponsors.
                 </m.p>
 
                 <m.div

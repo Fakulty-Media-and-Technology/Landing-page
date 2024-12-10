@@ -41,14 +41,14 @@ function HeroSection() {
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.5, delay: 0.8 }}
                         className={`${montserrat_800.className} font-extrabold md:max-w-[85%] text-[28px] md:text-4xl lg:text-[58px] leading-[37px] lg:leading-[67px] mb-7 text-center text-gray_white`}>
-                        Reeplay, Your Gateway to Africa’s Best Entertainment
+                        Reeplay, Your Gateway to Best Black Entertainment
                     </m.h5>
 
                     <m.p
                         initial={{ y: 100, opacity: 0, }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.5, delay: 1 }}
-                        className={`${manrope_500.className} md:max-w-[68%] text-sm md:text-base text-white_2 font-medium text-center leading-[25px] md:leading-[29px]`}>With just 1$,  experience live and on-demand entertainment from Africa’s finest creators—all in one place.
+                        className={`${manrope_500.className} md:max-w-[68%] text-sm md:text-base text-white_2 font-medium text-center leading-[25px] md:leading-[29px]`}>With just 1$,  experience live and on-demand Black entertainment from the finest creators—all in one place.
                         Join us and experience a new era of entertainment.</m.p>
 
                     <m.div initial={{ y: 100, opacity: 0, }}
@@ -159,19 +159,19 @@ function HeroSection() {
 
                     <div className='mt-10 mb-16 md:mt-12 lg:mt-16 flex flex-cols md:flex-row flex-wrap md:justify-between md:gap-x-10'>
                         <h2
-                            className={`${montserrat_800.className} leading-[32px] md:leading-[48px] lg:leading-[56px] mt-5 w-full sm:mx-auto max-w-[95%] md:max-w-[600px] text-2xl md:text-3xl lg:text-[42px] text-gray_white`}>Be Among the First brand to Showcase Your Content
-                            on Reeplay!</h2>
+                            className={`${montserrat_800.className} leading-[32px] md:leading-[48px] lg:leading-[56px] mt-5 w-full sm:mx-auto max-w-[95%] md:max-w-[600px] text-2xl md:text-3xl lg:text-[42px] text-gray_white`}>Be Among the first Brands to Broadcast Events
+                            or Tv Shows on Reeplay!</h2>
 
                         <div
                             className='mt-5 w-full sm:mx-auto max-w-[99%] md:max-w-[600px]'>
                             <p className={`${manrope_500.className} leading-[25px] lg:leading-[29px] text-sm md:text-base font-medium text-white_2`}>
-                                Are you a creator, producer, or brand ready to share your TV
-                                content to global audience? Join  Reeplay, the newest black
-                                streaming platform and share your TV content with a global audience.
-                                Early waitlist access includes 100 free airtime hours for eligible creators. Don’t miss your chance in 2025!</p>
+                                Are you a brand or creator, ready to Air your Reality TV Shows, Live concerts,
+                                sports, podcast, weddings or other events to global audience? Join Reeplay <br />
+                                and get early access  benefits like 100 free airtime hours for eligible creators.
+                                Don't miss your chance in 2025!</p>
 
 
-                            <a target='_blank' href="https://airtable.com/apprDXoDC3xnhHED3/pagH8Xgy4JbYAPNCl/form">                                <button onClick={() => setShowModal(!showModal)} className={`${manrope_600.className} font-semibold mt-5 text-base border-b border-[#F3F3F3] pb-1 text-[#F69392]`}>Join the Waitlist</button>
+                            <a target='_blank' href="https://airtable.com/apprDXoDC3xnhHED3/pagkXCmtQOARn03fh/form">                                <button onClick={() => setShowModal(!showModal)} className={`${manrope_600.className} font-semibold mt-5 text-base border-b border-[#F3F3F3] pb-1 text-[#F69392]`}>Submit to Waitlist</button>
                             </a>
                         </div>
                     </div>

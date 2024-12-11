@@ -1,11 +1,10 @@
 'use client'
 
-import React, { useRef } from 'react'
+import React from 'react'
 import Wrapper from './Wrapper'
 import { manrope_500 } from '@/configs/fonts'
 import Link from 'next/link'
 import Image from 'next/image'
-import { motion as m, useInView } from 'framer-motion'
 
 
 const Routes = [

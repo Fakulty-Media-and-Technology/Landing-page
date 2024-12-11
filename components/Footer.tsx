@@ -23,7 +23,7 @@ function Footer() {
                 <div className='flex items-center mb-16'>
 
                     <div className='flex-1 justify-evenly flex flex-col md:flex-row relative mb-14 sm:mb-0'>
-                        <div>
+                        <div className='mr-auto'>
                             <div className="overflow-hidden">
                                 <div
                                     className="overflow-hidden"
@@ -43,20 +43,21 @@ function Footer() {
                             <p className={`${manrope_500.className} mt-1.5 text-xs font-medium text-grey_800`}>Best Black Entertainment</p>
                         </div>
 
-
-                        <ul className='flex items-center justify-between w-[290px] absolute -bottom-16 sm:static md:w-[430px] lg:w-[552px] md:mr-4'>
-                            {Routes.map((route, i) => {
-                                return (
-                                    <li key={i} className=''>
-                                        {/* <Link href={`/${route.toLowerCase()}`}> */}
-                                        <a href={route.link} target='_blank'>
-                                            <span className={`${manrope_500.className} transition-all duration-200 cursor-pointer text-xs lg:text-sm font-medium text-white_2 hover:text-bgRed hover:scale-50`}>{route.name}</span>
-                                        </a>
-                                        {/* </Link> */}
-                                    </li>
-                                )
-                            })}
-                        </ul>
+                        <div className='flex-1 flex items-center justify-center'>
+                            <ul className='flex items-center justify-between w-[290px] absolute -bottom-16 sm:static md:w-[430px] lg:w-[552px] md:mr-4'>
+                                {Routes.map((route, i) => {
+                                    return (
+                                        <li key={i} className=''>
+                                            {/* <Link href={`/${route.toLowerCase()}`}> */}
+                                            <a href={route.link} target='_blank'>
+                                                <span className={`${manrope_500.className} transition-all duration-200 cursor-pointer text-xs lg:text-sm font-medium text-white_2 hover:text-bgRed hover:scale-50`}>{route.name}</span>
+                                            </a>
+                                            {/* </Link> */}
+                                        </li>
+                                    )
+                                })}
+                            </ul>
+                        </div>
 
                     </div>
 

@@ -5,8 +5,6 @@ import LaunchSection from "@/screens/Home/LaunchSection";
 import React from "react";
 
 
-// font-[family-name:var(--font-geist-sans)]
-
 export default function Home() {
   return (
     <React.Fragment>

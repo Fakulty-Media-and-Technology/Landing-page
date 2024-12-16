@@ -6,9 +6,12 @@ import Wrapper from './Wrapper';
 import Link from 'next/link';
 import Image from 'next/image';
 import Navbar from './Navbar';
+import { usePathname } from 'next/navigation';
 
 
 function HeaderComp() {
+    const route = usePathname();
+
     // Variables
     const [lastScroll, setLastScroll] = useState(0);
     const [scrollClass, setScrollClass] = useState('');
@@ -37,6 +40,7 @@ function HeaderComp() {
     })
     //fixed top-0 left-0 right-0 ${scrollClass}
 
+    // if (route.includes('waitlist')) return <></>
     return (
         <header className={` bg-black transition-all duration-300 ease-in-out z-[25]`}>
             <Wrapper>

@@ -17,7 +17,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "ReePlay Landing Page",
+  title: "ReePlay Inc",
   description: "Created by @Reeplay Team",
 };
 

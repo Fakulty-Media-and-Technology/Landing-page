@@ -26,7 +26,7 @@ function Navbar() {
             }}
         >
             {route.includes('waitlist') ?
-                <Link href={'/'} className={`${manrope_600.className} flex-row gap-x-2 flex items-center`}>
+                <Link href='/' className={`${manrope_600.className} cursor-pointer flex-row gap-x-2 flex items-center`}>
                     <span className='font-semibold text-sm md:text-base text-gray_white'>
                         Home
                     </span>

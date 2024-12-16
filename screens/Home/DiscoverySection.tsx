@@ -42,9 +42,9 @@ function DiscoverySection() {
                     initial="hidden"
                     whileInView={"show"}
                     className='my-7 md:my-8'>
-                    <Link href="/waitlist">
+                    <a href={`${window.location.href}waitlist`} target='_blank'>
                         <AppButton className='mx-auto px-10 md:px-10 py-[16px] md:py-[16px] rounded-[30px] text-base text-gray_white font-semibold' title='Join the Waitlist Now' bgColor='bg-bgRed' arrowLeft />
-                    </Link>
+                    </a>
                 </m.div>
             </Wrapper>
 

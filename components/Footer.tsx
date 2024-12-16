@@ -5,6 +5,7 @@ import Wrapper from './Wrapper'
 import { manrope_500 } from '@/configs/fonts'
 import Link from 'next/link'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 
 
 const Routes = [
@@ -16,7 +17,9 @@ const Routes = [
 ]
 
 function Footer() {
+    const route = usePathname();
 
+    if (route.includes('waitlist')) return <></>
     return (
         <footer className='bg-black pt-16 lg:pt-28'>
             <Wrapper>

@@ -9,7 +9,6 @@ import { AppButton, Carousel } from '@/components';
 import { ImagesData } from './HeroSection';
 import Image from 'next/image';
 import ReactPlayer from "react-player";
-import Link from 'next/link';
 
 
 function DiscoverySection() {

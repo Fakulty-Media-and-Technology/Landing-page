@@ -9,15 +9,17 @@ import { AppButton, Carousel } from '@/components';
 import { ImagesData } from './HeroSection';
 import Image from 'next/image';
 import ReactPlayer from "react-player";
+import { usePathname } from 'next/navigation';
 
 
 function DiscoverySection() {
     const [playingIndexes, setPlayingIndexes] = useState<number[]>([]);
     const [routeUrl, setRouteUrl] = useState<string>('/');
+    const pathname = usePathname();
 
     useEffect(() => {
         if (typeof window !== "undefined") {
-            setRouteUrl(window.location.href)
+            setRouteUrl(`${window.location.href}${pathname}`);
         }
     }, []);
 
@@ -48,7 +50,7 @@ function DiscoverySection() {
                     initial="hidden"
                     whileInView={"show"}
                     className='my-7 md:my-8'>
-                    <a href={`${routeUrl}waitlist`} target='_blank'>
+                    <a href={`${routeUrl || '/'}waitlist`} target='_blank'>
                         <AppButton className='mx-auto px-10 md:px-10 py-[16px] md:py-[16px] rounded-[30px] text-base text-gray_white font-semibold' title='Join the Waitlist Now' bgColor='bg-bgRed' arrowLeft />
                     </a>
                 </m.div>

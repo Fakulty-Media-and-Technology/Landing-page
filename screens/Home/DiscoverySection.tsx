@@ -13,6 +13,13 @@ import ReactPlayer from "react-player";
 
 function DiscoverySection() {
     const [playingIndexes, setPlayingIndexes] = useState<number[]>([]);
+    const [routeUrl, setRouteUrl] = useState<string>('/');
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            setRouteUrl(window.location.href)
+        }
+    }, []);
 
     return (
         <section className='bg-white pt-10 md:pt-20 lg:pt-28 '>
@@ -41,7 +48,7 @@ function DiscoverySection() {
                     initial="hidden"
                     whileInView={"show"}
                     className='my-7 md:my-8'>
-                    <a href={`${window.location.href}waitlist`} target='_blank'>
+                    <a href={`${routeUrl}waitlist`} target='_blank'>
                         <AppButton className='mx-auto px-10 md:px-10 py-[16px] md:py-[16px] rounded-[30px] text-base text-gray_white font-semibold' title='Join the Waitlist Now' bgColor='bg-bgRed' arrowLeft />
                     </a>
                 </m.div>

@@ -8,11 +8,8 @@ import { manrope_500, montserrat_800 } from '@/configs/fonts';
 import { AppButton, Carousel } from '@/components';
 import { ImagesData } from './HeroSection';
 import Image from 'next/image';
-import dynamic from 'next/dynamic';
-import Size from '@/utils/useResponsiveSize';
-import Loading from "@/configs/lottie/dots.json";
-import Lottie from 'lottie-react';
 import ReactPlayer from "react-player";
+import Link from 'next/link';
 
 
 function DiscoverySection() {
@@ -45,9 +42,9 @@ function DiscoverySection() {
                     initial="hidden"
                     whileInView={"show"}
                     className='my-7 md:my-8'>
-                    <a target='_blank' href="https://wt.ls/reeplaywaitlist">
+                    <Link href="/waitlist">
                         <AppButton className='mx-auto px-10 md:px-10 py-[16px] md:py-[16px] rounded-[30px] text-base text-gray_white font-semibold' title='Join the Waitlist Now' bgColor='bg-bgRed' arrowLeft />
-                    </a>
+                    </Link>
                 </m.div>
             </Wrapper>
 

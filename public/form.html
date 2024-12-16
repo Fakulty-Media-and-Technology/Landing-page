@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title></title>
+</head>
+
+<body>
+    <div class="t-signup">
+        <input type="text" name="first_name" placeholder="First Name" required>
+        <input type="email" name="email" placeholder="Email">
+        <input type="text" name="phone_number" placeholder="Mobile (Add country code)">
+    </div>
+
+    <script>
+        (function (t, u, e, m, i, l, io) {
+            t['TuemilioObject'] = m; t[m] = t[m] || function () { (t[m].q = t[m].q || []).push(arguments); };
+            t[m].id = 'fbd01b2b-f696-4a7e-b680-1ce11975e203'; l = u.createElement(e), io = u.getElementsByTagName(e)[0];
+            l.id = m; l.src = i; l.async = 1; io.parentNode.insertBefore(l, io);
+        }(window, document, 'script', 'Tuemilio', 'https://tuemilio.com/assets/js/modal/4.0/tuemilio-modal.js'));
+        Tuemilio('init', {
+            "form": {
+                "input": {
+                    "texts": {
+                        "placeholder": "Email"
+                    }
+                },
+                "button": {
+                    "texts": {
+                        "CTA": "Join Reeplay",
+                        "loading": "Loading",
+                        "checkDashboard": "Waitlist Dashboard",
+                        "login": "Login"
+                    }
+                },
+                "feedback": {
+                    "texts": {
+                        "empty": "Field is empty!",
+                        "invalidEmail": "Wrong email!",
+                        "unaccepted": "We do not accept that email",
+                        "unauthorized": "You did not subscribe with that email"
+                    }
+                }
+            }
+        });
+        Tuemilio('sendVisit');
+    </script>
+    <style>
+        .t-button {
+            color: white;
+            background-color: #e20606;
+            margin-top: 70px !important;
+            padding-inline: 55px;
+            padding-block: 12px;
+            padding-bottom: 14px;
+            border-radius: 100px;
+            font-family: "Manrope", sans-serif;
+            font-weight: 600;
+            align-self: "center";
+        }
+
+        .t-input-color::placeholder {
+            color: #77757596;
+        }
+
+        .t-primary-color {
+            color: white;
+            background-color: #e20606;
+            fill: white
+        }
+
+        .t-input-color {
+            color: #777575;
+            background-color: #fcfcfc;
+            margin-bottom: 20px;
+            padding: 10px;
+            padding-left: 20px;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .t-form {
+            padding-inline: 0;
+            margin-inline: auto !important;
+        }
+
+        .t-input {
+            width: 90% !important;
+        }
+
+        @media (max-width: 1024px) {
+            .t-form {
+                min-width: 420px;
+            }
+        }
+    </style>
+</body>
+
+</html>

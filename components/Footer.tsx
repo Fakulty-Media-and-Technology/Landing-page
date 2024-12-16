@@ -12,7 +12,7 @@ const Routes = [
     { name: 'About Us', link: 'https://open.substack.com/pub/reeplay/p/about-reeplay?r=4tn22d&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true' },
     { name: 'Business Inquires', link: 'mailto:business@reeplay.app' },
     { name: 'Invest', link: 'mailto:invest@reeplay.app' },
-    { name: 'Help', link: 'https://help.reeplay.app' },
+    { name: 'Help', link: '#' },
 ]
 
 function Footer() {
@@ -44,7 +44,7 @@ function Footer() {
                         </div>
 
                         <div className='flex-1 flex items-center justify-center'>
-                            <ul className='flex items-center justify-between w-[290px] absolute -bottom-16 sm:static md:w-[430px] lg:w-[552px] md:mr-4'>
+                            <ul className='flex items-center justify-between w-[290px] absolute -left-1 -bottom-16 sm:static md:w-[430px] lg:w-[552px] md:mr-4'>
                                 {Routes.map((route, i) => {
                                     return (
                                         <li key={i} className=''>
@@ -61,7 +61,7 @@ function Footer() {
 
                     </div>
 
-                    <div className='flex gap-x-5 items-center max-[767px]:-mt-20'>
+                    <div className='flex gap-x-3 md:gap-x-5 items-center max-[767px]:-mt-20'>
                         <a href='https://instagram.com/reeplayapp' target='_blank'>
                             <Image
                                 src={'/insta.svg'}
@@ -90,6 +90,14 @@ function Footer() {
                             <Image
                                 src={'/x.svg'}
                                 alt='twitter icon'
+                                width={16}
+                                height={16}
+                            />
+                        </a>
+                        <a href='https://www.tiktok.com/@reeplayapp' target='_blank'>
+                            <Image
+                                src={'/tiktok.svg'}
+                                alt='tiktok icon'
                                 width={16}
                                 height={16}
                             />

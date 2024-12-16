@@ -6,17 +6,17 @@ export const AdvantageSec_Data = [
     },
     {
         title: 'Easy Monetization',
-        description: 'Earn from your content with easy-to-use mopnetization tools tailored for creators.',
+        description: 'Earn from your content with easy-to-use monetization tools tailored for creators.',
         icon: '/earn.svg'
     },
     {
         title: 'Diverse Content',
-        description: 'Access variety of fresh, high-quality content, from live sports, reality TY to podcasts and more.',
+        description: 'Access variety of fresh, high-quality content, from live sports, reality TV to podcasts and more.',
         icon: '/content.svg'
     },
     {
         title: 'Shorter publishing time',
-        description: 'Enjoy an eaesy publishing process that gets your content live faster, reaching viewers instantly.',
+        description: 'Enjoy an easy publishing process that gets your content live faster, reaching viewers instantly.',
         icon: '/time.svg'
     },
     // Add more advantage items here

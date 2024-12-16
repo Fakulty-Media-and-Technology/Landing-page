@@ -2,11 +2,6 @@
 
 import Wrapper from '@/components/Wrapper'
 import React from 'react'
-import { motion as m } from 'framer-motion';
-import { manrope_500, montserrat_800 } from '@/configs/fonts';
-import Image from 'next/image';
-import { Carousel } from '@/components';
-import { ImagesData } from '@/screens/Home/HeroSection';
 import Size from '@/utils/useResponsiveSize';
 
 // <div className='pointer-events-none hidden lg:flex mx-auto h-[280px] lg:h-[460px] flex-cols justify-center relative overflow-hidden mt-8 lg:mt-0'>

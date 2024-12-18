@@ -50,7 +50,8 @@ function DiscoverySection() {
                     initial="hidden"
                     whileInView={"show"}
                     className='my-7 md:my-8'>
-                    <a href={`${routeUrl || '/'}waitlist`} target='_blank'>
+                    {/* <a href={`${routeUrl || '/'}waitlist`} target='_blank'> */}
+                    <a href='https://wt.ls/reeplaywaitlist' target='_blank'>
                         <AppButton className='mx-auto px-10 md:px-10 py-[16px] md:py-[16px] rounded-[30px] text-base text-gray_white font-semibold' title='Join the Waitlist Now' bgColor='bg-bgRed' arrowLeft />
                     </a>
                 </m.div>

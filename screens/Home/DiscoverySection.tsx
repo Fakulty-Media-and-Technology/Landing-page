@@ -41,7 +41,7 @@ function DiscoverySection() {
                     whileInView={"show"}
                     className={`${manrope_500.className} mt-5 mx-auto md:max-w-[90%] lg:max-w-[80%] xl:max-w-[67%] text-sm md:text-base text-black_2 font-medium text-center leading-[25px] md:leading-[29px]`}>
                     Get ready for an amazing lineup of movies, reality TV, podcasts, and more-all in one place!<br />
-                    Join our 2025 waitlist for 1 months free early access advantage, and the chance to <br /> win up to $5,000 and exciting prizes from our launch sponsors.
+                    Join our 2025 waitlist for 1 month free plus other early access benefits. and the chance to <br /> win up to $5,000 in giftcards and exciting prizes at launch.
                 </m.p>
 
                 <m.div

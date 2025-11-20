@@ -31,7 +31,7 @@ function LaunchSection() {
                     <div className='mt-6 md:mt-0 flex-1 flex flex-col items-start'>
                         <p
                             className={`${manrope_500.className} md:max-w-[90%] text-sm md:text-base text-white_2 font-medium leading-[25px] md:leading-[29px]`}>
-                            Churches, other Religious body or faith, media pros, and investors —launch your channel on Reeplay, the next-gen streaming platform! Join our 2025 rollout with 3 months free for early adopters. Reserve your spot today.</p>
+                            Churches, other Religious body or faith, media pros, and investors —launch your channel on Reeplay, the next-gen streaming platform! Join our rollout, get 1 month free for early adopters. Open to Nigeria and USA.</p>
 
                         <div
                             className='mt-8'>
@@ -52,7 +52,7 @@ function LaunchSection() {
                     <div
                         className='mt-7 w-full mx-auto md:max-w-[600px]'>
                         <p className={`${manrope_500.className} leading-[29px] text-sm md:text-base font-medium text-white_2`}>
-                            Exciting news for film producers! Join the waitlist to be first in line for submissions when we open up for films, documentaries, and series.<br /> Enjoy early access and exclusive monetization benefits.
+                            Exciting news for Nigeria and USA producers! Join the waitlist to be first in line for submissions when we open up for films, documentaries, and series.<br /> Enjoy early access and exclusive monetization benefits.
                         </p>
 
                         {/* {!showModal ? */}

@@ -18,7 +18,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "ReePlay Inc",
-  description: "Created by @Reeplay Team",
+  description: "Reeplay is a creator-first platform for Black entertainment. Upload, earn, and reach global audiences with PPV, ads, and live streaming tools built for African storytellers.",
 };
 
 export default function RootLayout({

@@ -32,7 +32,7 @@ function DiscoverySection() {
                     initial="hidden"
                     whileInView={"show"}
                     className={`${montserrat_800.className} mx-auto leading-[32px] md:leading-[48px] lg:leading-[56px] mt-4 w-full max-[768px]:max-w-[400px] md:max-w-[400px] lg:max-w-[600px] text-2xl md:text-3xl lg:text-[42px] text-black_1 text-center`}>
-                    The Gambia, are you ready? <br /> Join Reeplay here.
+                    Gambia, are you ready? <br /> Join Reeplay here.
                 </m.h2>
                 <m.p
                     variants={fadeIn("up", 0.3)}

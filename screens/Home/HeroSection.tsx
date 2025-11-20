@@ -168,7 +168,7 @@ function HeroSection() {
                                 Are you a brand or creator, ready to Air your Reality TV Shows, Live concerts,
                                 sports, podcast, weddings or other events to global audience? Join Reeplay <br />
                                 and get early access  benefits like 100 free airtime hours for eligible creators.
-                                Don't miss your chance in 2025!</p>
+                                Open to Nigerian and The USA!</p>
 
 
                             <a target='_blank' href="https://airtable.com/apprDXoDC3xnhHED3/pagkXCmtQOARn03fh/form">                                <button onClick={() => setShowModal(!showModal)} className={`${manrope_600.className} font-semibold mt-5 text-base border-b border-[#F3F3F3] pb-1 text-[#F69392]`}>Submit to Waitlist</button>

@@ -48,7 +48,7 @@ function HeroSection() {
                         initial={{ y: 100, opacity: 0, }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.5, delay: 1 }}
-                        className={`${manrope_500.className} md:max-w-[68%] text-sm md:text-base text-white_2 font-medium text-center leading-[25px] md:leading-[29px]`}>Best Black and African Entertainment — live or on-demand — from as low as ₦100 per view. No subscriptions. Just pure entertainment, anytime.
+                        className={`${manrope_500.className} md:max-w-[68%] text-sm md:text-base text-white_2 font-medium text-center leading-[25px] md:leading-[29px]`}>Best Black and African Entertainment — live or on-demand — from as low as ₦100 ($0.2/14 Dalasis) per view. No subscriptions. Just pure entertainment, anytime.
                         Affordable for viewers. Empowering for creators.</m.p>
 
                     <m.div initial={{ y: 100, opacity: 0, }}

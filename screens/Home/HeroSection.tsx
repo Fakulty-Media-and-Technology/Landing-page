@@ -41,15 +41,15 @@ function HeroSection() {
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.5, delay: 0.8 }}
                         className={`${montserrat_800.className} font-extrabold md:max-w-[85%] text-[28px] md:text-4xl lg:text-[58px] leading-[37px] lg:leading-[67px] mb-7 text-center text-gray_white`}>
-                        Reeplay, Your Gateway to Best Black Entertainment
+                        Reeplay, The Future Of Black Entertainment
                     </m.h5>
 
                     <m.p
                         initial={{ y: 100, opacity: 0, }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.5, delay: 1 }}
-                        className={`${manrope_500.className} md:max-w-[68%] text-sm md:text-base text-white_2 font-medium text-center leading-[25px] md:leading-[29px]`}>With just 1$,  experience live and on-demand Black entertainment from the finest creators—all in one place.
-                        Join us and experience a new era of entertainment.</m.p>
+                        className={`${manrope_500.className} md:max-w-[68%] text-sm md:text-base text-white_2 font-medium text-center leading-[25px] md:leading-[29px]`}>Best Black and African Entertainment — live or on-demand — from as low as ₦100 per view. No subscriptions. Just pure entertainment, anytime.
+                        Affordable for viewers. Empowering for creators.</m.p>
 
                     <m.div initial={{ y: 100, opacity: 0, }}
                         animate={{ y: 0, opacity: 1 }}

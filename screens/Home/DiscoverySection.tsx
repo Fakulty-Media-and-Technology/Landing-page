@@ -32,7 +32,7 @@ function DiscoverySection() {
                     initial="hidden"
                     whileInView={"show"}
                     className={`${montserrat_800.className} mx-auto leading-[32px] md:leading-[48px] lg:leading-[56px] mt-4 w-full max-[768px]:max-w-[400px] md:max-w-[400px] lg:max-w-[600px] text-2xl md:text-3xl lg:text-[42px] text-black_1 text-center`}>
-                    You're a Viewer? <br /> Join Reeplay here.
+                    The Gambia, are you ready? <br /> Join Reeplay here.
                 </m.h2>
                 <m.p
                     variants={fadeIn("up", 0.3)}
@@ -40,8 +40,8 @@ function DiscoverySection() {
                     initial="hidden"
                     whileInView={"show"}
                     className={`${manrope_500.className} mt-5 mx-auto md:max-w-[90%] lg:max-w-[80%] xl:max-w-[67%] text-sm md:text-base text-black_2 font-medium text-center leading-[25px] md:leading-[29px]`}>
-                    Get ready for an amazing lineup of movies, reality TV, podcasts, and more-all in one place!<br />
-                    Join our 2025 waitlist for 1 month free plus other early access benefits. and the chance to <br /> win up to $5,000 in giftcards and exciting prizes at launch.
+                    Reeplay is bringing a powerful lineup of Gambian & global Black entertainment straight to you.<br />
+                    We are calling creators and Viewers. Join the Reeplay Gambia waitlist through Sahel Entertainment <br /> for early-bird rewards, and a chance to win up to $5,000.
                 </m.p>
 
                 <m.div

@@ -41,7 +41,7 @@ function DiscoverySection() {
                     whileInView={"show"}
                     className={`${manrope_500.className} mt-5 mx-auto md:max-w-[90%] lg:max-w-[80%] xl:max-w-[67%] text-sm md:text-base text-black_2 font-medium text-center leading-[25px] md:leading-[29px]`}>
                     Reeplay is bringing a powerful lineup of Gambian & global Black entertainment straight to you.<br />
-                    We are calling on brands, creators and Viewers. Join the Reeplay Gambia waitlist through Sahel Entertainment <br /> for early-bird rewards, and a chance to win up to D300,000 in Gifts, cash and Brand adverts.
+                    We are calling on brands, creators and Viewers. Join the Reeplay Gambia waitlist through Sahel Entertainment <br /> for a chance to win up to D300,000 in Gifts, cash and Brand adverts.
                 </m.p>
 
                 <m.div

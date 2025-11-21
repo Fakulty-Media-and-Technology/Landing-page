@@ -1,12 +1,12 @@
 export const AdvantageSec_Data = [
     {
         title: 'Affordable Access',
-        description: 'Unlock premium content for just $1/month, making high-quality entertainment accessible.',
+        description: 'Pay only for what you watch, starting at ₦100 ($0.20 / 14 Dalasis). No subscriptions, no commitments..',
         icon: '/lock.svg'
     },
     {
         title: 'Easy Monetization',
-        description: 'Earn from your content with easy-to-use monetization tools tailored for creators.',
+        description: 'Instant and direct earnings via PPV monetization model, specially tailored for creators.',
         icon: '/earn.svg'
     },
     {

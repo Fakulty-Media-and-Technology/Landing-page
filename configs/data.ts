@@ -1,7 +1,7 @@
 export const AdvantageSec_Data = [
     {
         title: 'Affordable Access',
-        description: 'Pay only for what you watch, starting at ₦100 ($0.20 / 14 Dalasis). No subscriptions, no commitments..',
+        description: 'Pay only for what you watch, starting from ₦100 ($0.20 / 14 Dalasis). no subscriptions, no commitments.',
         icon: '/lock.svg'
     },
     {

@@ -11,7 +11,7 @@ import { usePathname } from 'next/navigation'
 const Routes = [
     { name: 'Blog', link: 'https://reeplay.substack.com' },
     { name: 'About Us', link: 'https://open.substack.com/pub/reeplay/p/about-reeplay?r=4tn22d&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true' },
-    { name: 'Business Inquires', link: 'mailto:business@reeplay.app' },
+    { name: 'Refund Policy', link: 'https://reeplay.substack.com/p/reeplay-payments-and-refund-policy' },
     { name: 'Invest', link: 'mailto:invest@reeplay.app' },
     { name: 'Help', link: '#' },
 ]

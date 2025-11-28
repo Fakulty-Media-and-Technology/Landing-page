@@ -113,8 +113,8 @@ function Footer() {
 
                 <div className='flex justify-between items-center border-t-[0.5px] border-black_2 pt-3'>
                     <a href='https://open.substack.com/pub/reeplay/p/terms-and-conditions?r=4tn22d&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true' target='_blank' className={`${manrope_500} text-xs font-medium text-grey_800`}>Terms and policy</a>
-                    <a href='#' target='_blank' className={`${manrope_500} text-xs font-medium text-grey_800`}>Business Address: NIGERIA - House 21, Road B1, Pentville Estate, Lokogoma, Abuja | United states: 8 The Green STE, Suite B, Dover, Delaware 19901</a>
-                    <a href='#' target='_blank' className={`${manrope_500} text-xs font-medium text-grey_800`}>Business Phone & Email: +2348166292037 | +13026650904 | We@reeplay.app</a>
+                    <a href='#' target='_blank' className={`${manrope_500} text-xs font-medium text-grey_800`}>Address: NIGERIA - House 21, Road B1, Pentville Estate, Lokogoma, Abuja | United states: 8 The Green STE, Dover, Delaware 19901</a>
+                    <a href='#' target='_blank' className={`${manrope_500} text-xs font-medium text-grey_800`}>Phone & Email: +2348166292037 | +13026650904 | We@reeplay.app</a>
                     <a href='https://open.substack.com/pub/reeplay/p/privacy-policy?r=4tn22d&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true' target='_blank' className={`${manrope_500} text-xs font-medium text-grey_800`}>Privacy policy</a>
                 </div>
             </Wrapper>

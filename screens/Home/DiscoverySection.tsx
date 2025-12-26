@@ -51,7 +51,7 @@ function DiscoverySection() {
                     className='my-7 md:my-8'>
                     {/* <a href={`${routeUrl || '/'}waitlist`} target='_blank'> */}
                     <a href='mailto:sahelfilms@gmail.com' target='_blank'>
-                        <AppButton className='mx-auto px-10 md:px-10 py-[16px] md:py-[16px] rounded-[30px] text-base text-gray_white font-semibold' title='Contact Sahel Entertainment' bgColor='bg-bgRed' arrowLeft />
+                        <AppButton className='mx-auto px-10 md:px-10 py-[16px] md:py-[16px] rounded-[30px] text-base text-gray_white font-semibold' title='Submit Your Interest' bgColor='bg-bgRed' arrowLeft />
                     </a>
                 </m.div>
             </Wrapper>

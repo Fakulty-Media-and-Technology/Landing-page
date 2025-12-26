@@ -40,9 +40,8 @@ function DiscoverySection() {
                     initial="hidden"
                     whileInView={"show"}
                     className={`${manrope_500.className} mt-5 mx-auto md:max-w-[90%] lg:max-w-[80%] xl:max-w-[67%] text-sm md:text-base text-black_2 font-medium text-center leading-[25px] md:leading-[29px]`}>
-                    Reeplay is bringing a powerful lineup of Gambian & global Black entertainment straight to you.<br />
-                    We are calling on brands, creators and Viewers. Join through Sahel Entertainment <br /> for a chance to win up to D300,000 in Gifts, cash and Brand adverts.
-                </m.p>
+                    Reeplay is bringing The Combatant — a survival reality show where nothing is given, and everything is earned.<br />
+                    Contestants fight to endure; Brands connect with culture; Audiences don’t just watch — they influence the outcome.<br /> We invite contestants and partners to take part in a groundbreaking African original built for the world.
 
                 <m.div
                     variants={fadeIn("up", 0.5)}

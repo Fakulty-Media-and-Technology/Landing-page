@@ -40,8 +40,8 @@ function DiscoverySection() {
                     initial="hidden"
                     whileInView={"show"}
                     className={`${manrope_500.className} mt-5 mx-auto md:max-w-[90%] lg:max-w-[80%] xl:max-w-[67%] text-sm md:text-base text-black_2 font-medium text-center leading-[25px] md:leading-[29px]`}>
-                    We are bringing The Combatant — a survival reality show where nothing is given, and everything is earned.<br />
-                    Contestants fight to endure; Brands connect with culture; Audiences don’t just watch — they influence the outcome.<br /> We invite contestants and partners to take part in a groundbreaking African original built for the world.
+                    Reeplay is bringing The Combatant — a survival reality show where nothing is given, and everything is earned.<br />
+                    Contestants fight to endure; Audiences don’t just watch — they influence the outcome.<br /> Submit your interest for Auditions and Brand partnerships.
                 </m.p>
 
                 <m.div

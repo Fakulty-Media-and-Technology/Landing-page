@@ -38,6 +38,7 @@ function Footer() {
                                             width={96}
                                             height={32}
                                             priority={true}
+                                            unoptimized
                                             className="object-contain cursor-pointer w-[120px] lg:w-[132px] xl:w-[147px]"
                                         />
                                     </Link>
@@ -71,6 +72,7 @@ function Footer() {
                                 alt='instagram icon'
                                 width={16}
                                 height={16}
+                                unoptimized
                             />
                         </a>
                         <a href='https://www.linkedin.com/company/reeplayinc/' target='_blank'>
@@ -79,6 +81,7 @@ function Footer() {
                                 alt='linkedIn icon'
                                 width={16}
                                 height={16}
+                                unoptimized
                             />
                         </a>
                         <a href='https://facebook.com/reeplayapp' target='_blank'>
@@ -87,6 +90,7 @@ function Footer() {
                                 alt='faceebook icon'
                                 width={16}
                                 height={16}
+                                unoptimized
                             />
                         </a>
                         <a href='https://twitter.com/reeplayapp' target='_blank'>
@@ -95,6 +99,7 @@ function Footer() {
                                 alt='twitter icon'
                                 width={16}
                                 height={16}
+                                unoptimized
                             />
                         </a>
                         <a href='https://www.tiktok.com/@reeplayapp' target='_blank'>
@@ -103,6 +108,7 @@ function Footer() {
                                 alt='tiktok icon'
                                 width={16}
                                 height={16}
+                                unoptimized
                             />
                         </a>
 

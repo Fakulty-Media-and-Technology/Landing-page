@@ -30,7 +30,7 @@ function Navbar() {
                     <span className='font-semibold text-sm md:text-base text-gray_white'>
                         Home
                     </span>
-                    <Image src='/arrow-left.svg' width={15} height={11} alt='button' className='w-[15px] mt-1 h-[11px] object-contain' />
+                    <Image src='/arrow-left.svg' width={15} height={11} alt='button' unoptimized className='w-[15px] mt-1 h-[11px] object-contain' />
 
                 </Link>
 
@@ -38,7 +38,7 @@ function Navbar() {
                     <span className='font-semibold text-sm md:text-base text-gray_white'>
                         Business Inquires
                     </span>
-                    <Image src='/arrow-left.svg' width={15} height={11} alt='button' className='w-[15px] mt-1 h-[11px] object-contain' />
+                    <Image src='/arrow-left.svg' width={15} height={11} alt='button' unoptimized className='w-[15px] mt-1 h-[11px] object-contain' />
 
                 </a>}
         </m.nav>

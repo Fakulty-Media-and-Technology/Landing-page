@@ -25,6 +25,7 @@ function AdvantageSection() {
                                     width={64}
                                     height={64}
                                     alt='Icons'
+                                    unoptimized
                                     className='w-[54px] h-[54px]'
                                 />
                                 <h6 className={`${montserrat_700.className} text-black_1 text-base sm:text-lg md:text-xl text-center font-bold mt-2.5`}>{x.title}</h6>

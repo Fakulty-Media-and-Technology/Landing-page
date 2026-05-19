@@ -42,7 +42,7 @@ const AppButton = ({
           />
         )} */}
             {title}
-            {arrowLeft && <Image src='/arrow-left.svg' width={15} height={11} alt='button' className='w-[15px] ml-2 mt-[2px] h-[11px] object-contain' />
+            {arrowLeft && <Image src='/arrow-left.svg' width={15} height={11} alt='button' unoptimized className='w-[15px] ml-2 mt-[2px] h-[11px] object-contain' />
             }
         </button>
     );

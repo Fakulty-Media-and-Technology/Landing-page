@@ -130,6 +130,7 @@ export const CarouselBox = ({ isLastItem, x, i, playingIndexes, setPlayingIndexe
                 width={540}
                 height={432}
                 className='w-[540px] xl:w-[100%] h-[452px] object-cover'
+                unoptimized
             />
             }
             {!isPlaying && <div className='absolute top-0 z-10 w-full h-[60%] lg:h-full flex items-center justify-center'>
@@ -139,6 +140,7 @@ export const CarouselBox = ({ isLastItem, x, i, playingIndexes, setPlayingIndexe
                         width={48}
                         height={48}
                         alt='Play Icon'
+                        unoptimized
                     />
                 </button>
             </div>}
@@ -209,6 +211,7 @@ export const CarouselBox = ({ isLastItem, x, i, playingIndexes, setPlayingIndexe
                                         width={30}
                                         height={30}
                                         className=" object-cover"
+                                        unoptimized
                                     />
                                 </button>
                             </div>
@@ -219,11 +222,12 @@ export const CarouselBox = ({ isLastItem, x, i, playingIndexes, setPlayingIndexe
                                 onClick={() => setMute(false)}
                             >
                                 <Image
-                                    src="/unmute.svg"
+                                     src="/unmute.svg"
                                     alt=""
                                     width={24}
                                     height={24}
                                     className="object-contain rounded-full"
+                                     unoptimized
                                 />
                             </div>
                         </div>

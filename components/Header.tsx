@@ -66,6 +66,7 @@ function HeaderComp() {
                                     width={96}
                                     height={32}
                                     priority={true}
+                                    unoptimized
                                     className="object-contain cursor-pointer sm:w-[112px] md:w-[120px] lg:w-[132px] xl:w-[147px]"
                                 />
                             </Link>

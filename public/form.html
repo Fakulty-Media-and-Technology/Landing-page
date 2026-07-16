@@ -4,103 +4,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <title></title>
-</head>
-
-<body>
-    <div class="t-signup">
-        <input type="text" name="first_name" placeholder="First Name" required>
-        <input type="email" name="email" placeholder="Email">
-        <input type="text" name="phone_number" placeholder="Mobile (Add country code)">
-    </div>
-
-    <script>
-        (function (t, u, e, m, i, l, io) {
-            t['TuemilioObject'] = m; t[m] = t[m] || function () { (t[m].q = t[m].q || []).push(arguments); };
-            t[m].id = 'fbd01b2b-f696-4a7e-b680-1ce11975e203'; l = u.createElement(e), io = u.getElementsByTagName(e)[0];
-            l.id = m; l.src = i; l.async = 1; io.parentNode.insertBefore(l, io);
-        }(window, document, 'script', 'Tuemilio', 'https://tuemilio.com/assets/js/modal/4.0/tuemilio-modal.js'));
-        Tuemilio('init', {
-            "form": {
-                "input": {
-                    "texts": {
-                        "placeholder": "Email"
-                    }
-                },
-                "button": {
-                    "texts": {
-                        "CTA": "Join Reeplay",
-                        "loading": "Loading",
-                        "checkDashboard": "Waitlist Dashboard",
-                        "login": "Login"
-                    }
-                },
-                "feedback": {
-                    "texts": {
-                        "empty": "Field is empty!",
-                        "invalidEmail": "Wrong email!",
-                        "unaccepted": "We do not accept that email",
-                        "unauthorized": "You did not subscribe with that email"
-                    }
-                }
-            }
-        });
-        Tuemilio('sendVisit');
-    </script>
+    <title>Reeplay Waitlist</title>
     <style>
-        .t-button {
-            color: white;
-            background-color: #e20606;
-            margin-top: 70px !important;
-            padding-inline: 55px;
-            padding-block: 12px;
-            padding-bottom: 14px;
-            border-radius: 100px;
-            font-family: "Manrope", sans-serif;
-            font-weight: 600;
-            align-self: "center";
+        :root {
+            color-scheme: dark;
+            --bg: #000000;
+            --panel: rgba(255, 255, 255, 0.05);
+            --panel-border: rgba(255, 255, 255, 0.1);
+            --text: #f3f3f3;
+            --muted: #c1c1c1;
+            --accent: #f69392;
         }
 
-        .t-input-color::placeholder {
-            color: #77757596;
+        * {
+            box-sizing: border-box;
         }
 
-        .t-primary-color {
-            color: white;
-            background-color: #e20606;
-            fill: white
+        html,
+        body {
+            margin: 0;
+            min-height: 100%;
+            background: var(--bg);
+            color: var(--text);
+            font-family: Manrope, Montserrat, Arial, sans-serif;
         }
 
-        .t-input-color {
-            color: #777575;
-            background-color: #fcfcfc;
-            margin-bottom: 20px;
-            padding: 10px;
-            padding-left: 20px;
-            font-family: "Montserrat", sans-serif;
+        body {
+            padding: 32px 20px;
         }
 
-        .t-form {
-            padding-inline: 0;
-            margin-inline: auto !important;
-            margin-top: 35%;
+        .shell {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 28px;
+            border: 1px solid var(--panel-border);
+            border-radius: 28px;
+            background: var(--panel);
         }
 
-        .t-input {
-            width: 90% !important;
+        .eyebrow {
+            margin: 0;
+            color: var(--accent);
+            letter-spacing: 0.24em;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 700;
         }
 
-        @media (max-width: 1024px) {
-            .t-form {
-                max-width: 420px;
+        h1 {
+            margin: 12px 0 0;
+            font-size: clamp(32px, 6vw, 52px);
+            line-height: 1.05;
+        }
+
+        p {
+            margin: 14px 0 0;
+            color: var(--muted);
+            line-height: 1.7;
+            max-width: 720px;
+        }
+
+        .grid {
+            margin-top: 32px;
+            display: grid;
+            gap: 16px;
+        }
+
+        .card {
+            padding: 20px;
+            border-radius: 22px;
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--panel-border);
+        }
+
+        .card h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .card p {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .button {
+            display: inline-flex;
+            margin-top: 18px;
+            padding: 12px 18px;
+            border-radius: 999px;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .button:hover {
+            background: var(--accent);
+            color: #000;
+        }
+
+        @media (min-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
             }
         }
     </style>
+</head>
+
+<body>
+    <main class="shell">
+        <p class="eyebrow">Waitlist</p>
+        <h1>Join the right Reeplay waitlist</h1>
+        <p>Use the direct forms below instead of the embedded modal. This keeps the experience stable and avoids the server-action error from the old embedded script.</p>
+
+        <div class="grid">
+            <section class="card">
+                <h2>Brand / Events</h2>
+                <p>Broadcast live events, shows, and branded content on Reeplay.</p>
+                <a class="button" href="https://airtable.com/apprDXoDC3xnhHED3/pagkXCmtQOARn03fh/form" target="_blank" rel="noreferrer">Open form</a>
+            </section>
+
+            <section class="card">
+                <h2>Producers</h2>
+                <p>Join the film, documentary, and series waitlist for early access.</p>
+                <a class="button" href="https://airtable.com/apprDXoDC3xnhHED3/pagH8Xgy4JbYAPNCl/form" target="_blank" rel="noreferrer">Open form</a>
+            </section>
+
+            <section class="card">
+                <h2>Churches / Faith</h2>
+                <p>Apply for early access to launch your channel on Reeplay.</p>
+                <a class="button" href="https://airtable.com/apprDXoDC3xnhHED3/pagtDI0fzHtomhJ1S/form" target="_blank" rel="noreferrer">Open form</a>
+            </section>
+        </div>
+    </main>
 </body>
 
 </html>
